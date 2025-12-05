@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Deluxe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="startScreen">
+    <h1>Pong Deluxe</h1>
+
+    <label>Spelare 1 namn:</label>
+    <input id="p1name" type="text" placeholder="Player 1">
+
+    <label>Spelare 2 namn:</label>
+    <input id="p2name" type="text" placeholder="Player 2">
+
+    <label>Välj svårighetsgrad:</label>
+    <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="hard">Hard</option>
+    </select>
+
+    <label>Färgtema:</label>
+    <select id="colorTheme">
+        <option value="white">Classic White</option>
+        <option value="neonblue">Neon Blue</option>
+        <option value="neongreen">Neon Green</option>
+        <option value="sunset">Sunset Orange</option>
+    </select>
+
+    <button id="startButton">Start</button>
+</div>
+
+<canvas id="gameCanvas"></canvas>
+
+<script src="game.js"></script>
+</body>
+</html>
